@@ -13,6 +13,9 @@ class Attach{
     fly(){
         this.sling.bodyA = null;
     }
+    attach(body){
+        this.sling.bodyA = body;
+    }
     display(){
         var pointA = this.sling.bodyA.position;
         var pointB = this.pointB;
