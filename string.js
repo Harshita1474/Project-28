@@ -17,10 +17,12 @@ class Attach{
         this.sling.bodyA = body;
     }
     display(){
-        var pointA = this.sling.bodyA.position;
-        var pointB = this.pointB;
-        strokeWeight(4);
-        line(pointA.x, pointA.y, pointB.x, pointB.y);
+        if(this.sling.bodyA){
+            var pointA = this.sling.bodyA.position;
+            var pointB = this.pointB;
+            strokeWeight(4);
+            line(pointA.x, pointA.y, pointB.x, pointB.y);
+        }
     }
     
 }
